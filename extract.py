@@ -3,8 +3,8 @@ import os
 import PIL # optional
 import pandas as pd
 import csv
+
 # list of attributes available in dicom image
-# download this file from the given github link
 dicom_image_description = pd.read_csv("dicom_image_description.csv")
 # Specify the .dcm folder path
 folder_path = "stage_1_test_images"
