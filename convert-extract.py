@@ -5,6 +5,7 @@ import cv2
 import PIL # optional
 import pandas as pd
 import csv
+
 # make it True if you want in PNG format
 PNG = False
 # Specify the .dcm folder path
@@ -13,7 +14,7 @@ folder_path = "stage_1_test_images"
 jpg_folder_path = "JPG_test"
 images_path = os.listdir(folder_path)
 # list of attributes available in dicom image
-# download this file from the given link # https://github.com/vivek8981/DICOM-to-JPG
+
 dicom_image_description = pd.read_csv("dicom_image_description.csv")
 
 with open('Patient_Detail.csv', 'w', newline ='') as csvfile:
